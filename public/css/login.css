@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(//db.onlinewebfonts.com/c/cf3b1825f5b015ebd8dcdc3e97ac129c?family=Fugue);
+@import url(http://fonts.cdnfonts.com/css/gotham);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Gotham", sans-serif;
+  background-color: #fbfcfd;
+}
+
+.loadergif {
+  position: absolute;
+  z-index: 9999999;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+#logo {
+  width: 90px;
+  margin-left: 20px;
+}
+
+#log-a {
+  width: 90px;
+  margin-right: 1em;
+  border: 2px solid #ffffff !important;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 34px;
+  color: #ffffff !important;
+  margin-top: 22px;
+  box-shadow: 0 0px 4px white;
+}
+
+#log-a:hover {
+  background-color: #2153cc;
+  color: white !important;
+}
+
+.log-in {
+  height: 100vh;
+}
+
+.second-nav {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  background-color: #180C9A;
+  height: 14%;
+  border-radius: 0 0 60px 60px;
+  justify-content: center;
+}
+
+.svg-log {
+  position: absolute;
+  width: 28em;
+  top: 15em;
+  z-index: -1;
+}
+
+h4 {
+  color: white;
+  margin-bottom: 18px !important;
+  font-family: "Gotham", sans-serif;
+}
+
+.nav-log {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top right, #061530, #180C9A);
+  border-radius: 0px 0px 40px 40px;
+  height: 7%;
+}
+
+.form-log {
+  width: 30em;
+  box-shadow: 0 10px 25px rgba(181, 184, 185, 0.301);
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 22em !important;
+  padding: 10px 2em 10px 2em;
+}
+
+.btns-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.btns-api {
+  height: 48px;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 2px solid #cecece;
+  background-color: transparent;
+  color: #121316;
+  pointer-events: auto;
+  font-family: "Gotham", sans-serif;
+  font-weight: 500;
+}
+
+.btns-api:hover {
+  border: 2px solid #180c9a;
+}
+
+.input-dev {
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.input-log {
+  padding: 12px 14px 0;
+  color: #121110;
+  border: 2px solid #cecece;
+  border-radius: 8px;
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: none;
+}
+
+.label-log {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  padding: 0 0.25em;
+  background-color: white;
+  color: #cecece;
+  transition: 0.3s;
+}
+
+.input-log:focus + .label-log {
+  top: -1em;
+  left: 1em;
+  color: #180C9A;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input-log:not(:-moz-placeholder-shown).input-log:not(:focus) + .label-log {
+  top: -0.5em;
+  left: 1em;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input-log:not(:-ms-input-placeholder).input-log:not(:focus) + .label-log {
+  top: -0.5em;
+  left: 1em;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input-log:not(:placeholder-shown).input-log:not(:focus) + .label-log {
+  top: -0.5em;
+  left: 1em;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.input-log:focus {
+  border: 2px solid #180C9A;
+}
+
+.btn-log {
+  border-radius: 8px;
+  background-color: #180C9A;
+  color: white;
+  height: 50px;
+  border: none;
+  font-size: 15px;
+  font-family: "Gotham", sans-serif;
+}
+
+.btn-log:hover {
+  background-color: #de3b3b;
+}
+
+a {
+  color: #180C9A !important;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin-top: 1em;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-family: "Gotham", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #cecece;
+  font-family: "GothamPro", sans-serif !important;
+}
+
+.form-sign {
+  width: 30em;
+  box-shadow: 0 10px 25px rgba(181, 184, 185, 0.301);
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 28em !important;
+  padding: 10px 2em 20px 2em;
+}
+
+.svg-sign {
+  position: absolute;
+  top: 12em;
+}
