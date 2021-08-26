@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="312mm" xmlns="http://www.w3.org/2000/svg" height="304mm" version="1.1" viewBox="0 0 1179 1151" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <polyline fill="none" points="113,184 368,184 368,143 471,143" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="113,194 259,194 259,215 576,215" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="69,575 76,575 76,221" stroke="#8080ff" stroke-width="1"/>
+   <polygon fill="#ffffff" points="76,221 83,235 69,235" stroke="#8080ff" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="36,563 36,443 397,443" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="69,606 214,606 214,596 401,596" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="69,604 263,604 263,499 397,499" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="35,630 35,668 371,668" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="1115,308 1115,434 949,434" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="1022,430 1008,434 1022,438" stroke="#8080ff" stroke-width="1"/>
+   <text x="1115" y="439" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="944,406 944,144 513,144" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="540,140 527,144 540,148" stroke="#8080ff" stroke-width="1"/>
+   <text x="897" y="150" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
+   <polyline fill="none" points="931,416 931,221 592,221" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="656,217 643,221 656,225" stroke="#8080ff" stroke-width="1"/>
+   <text x="897" y="224" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
+   <polyline fill="none" points="80,221 80,309 543,309" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="401,247 401,168 113,168" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="923,413 684,413 684,444 439,444" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="471,440 458,444 471,448" stroke="#8080ff" stroke-width="1"/>
+   <text x="684" y="424" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="929,437 929,514 446,514" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="473,510 460,514 473,518" stroke="#8080ff" stroke-width="1"/>
+   <text x="868" y="517" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="964,443 964,617 424,617" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="466,613 453,617 466,621" stroke="#8080ff" stroke-width="1"/>
+   <text x="806" y="620" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="944,454 944,691 439,691" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="473,687 459,691 473,695" stroke="#8080ff" stroke-width="1"/>
+   <text x="814" y="693" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="958,456 958,314 613,314" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="649,310 636,314 649,318" stroke="#8080ff" stroke-width="1"/>
+   <text x="821" y="318" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="451,833 69,833 69,909" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="430,912 236,912 236,923 101,923" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="443,992 443,919 101,919" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="530,1064 114,1064 114,920 101,920" stroke="#0080ff" stroke-width="1"/>
+   <polyline fill="none" points="70,909 70,557 84,557 84,221" stroke="#8080ff" stroke-width="1"/>
+   <polygon fill="#ffffff" points="84,221 91,235 77,235" stroke="#8080ff" stroke-width="1" stroke-linejoin="miter"/>
+   <polyline fill="none" points="933,420 933,252 477,252" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="540,248 527,252 540,256" stroke="#8080ff" stroke-width="1"/>
+   <text x="932" y="257" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;extend&gt;&gt;</text>
+   <polyline fill="none" points="976,447 976,924 444,924" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="474,920 461,924 474,928" stroke="#8080ff" stroke-width="1"/>
+   <text x="976" y="929" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="990,448 990,1077 583,1077" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="618,1073 604,1077 618,1081" stroke="#8080ff" stroke-width="1"/>
+   <text x="990" y="1080" fill="#000000" font-size="10" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="962,454 962,1032 433,1032" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="456,1028 443,1032 456,1036" stroke="#8080ff" stroke-width="1"/>
+   <text x="962" y="1035" fill="#000000" font-size="10" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <polyline fill="none" points="978,438 978,844 538,844" stroke="#8080ff" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="572,840 559,844 572,848" stroke="#8080ff" stroke-width="1"/>
+   <text x="978" y="847" fill="#000000" font-size="10" font-family="Arial" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+   <rect x="246" y="2" fill="none" width="804" height="1147" stroke="#000000" stroke-width="2"/>
+   <defs>
+      <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ffffc0"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="80" cy="163" rx="8" ry="8" fill="url(#Gradient1)" stroke="#0080ff" stroke-width="2"/>
+   <line x1="80" x2="80" y1="171" y2="187" stroke="#0080ff" stroke-width="2"/>
+   <line x1="64" x2="96" y1="179" y2="179" stroke="#0080ff" stroke-width="2"/>
+   <line x1="64" x2="80" y1="203" y2="187" stroke="#0080ff" stroke-width="2"/>
+   <line x1="96" x2="80" y1="203" y2="187" stroke="#0080ff" stroke-width="2"/>
+   <text x="80" y="219" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Visiteur</text>
+   <defs>
+      <linearGradient id="Gradient2" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="467" cy="138" rx="60" ry="36" fill="url(#Gradient2)" stroke="#0080ff" stroke-width="2"/>
+   <text x="467" y="136" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">view website </text>
+   <text x="467" y="150" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">content</text>
+   <defs>
+      <linearGradient id="Gradient3" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="598" cy="203" rx="50" ry="36" fill="url(#Gradient3)" stroke="#0080ff" stroke-width="2"/>
+   <text x="597" y="208" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">share post</text>
+   <defs>
+      <linearGradient id="Gradient4" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ffffc0"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="36" cy="572" rx="8" ry="8" fill="url(#Gradient4)" stroke="#0080ff" stroke-width="2"/>
+   <line x1="36" x2="36" y1="580" y2="596" stroke="#0080ff" stroke-width="2"/>
+   <line x1="20" x2="52" y1="588" y2="588" stroke="#0080ff" stroke-width="2"/>
+   <line x1="20" x2="36" y1="612" y2="596" stroke="#0080ff" stroke-width="2"/>
+   <line x1="52" x2="36" y1="612" y2="596" stroke="#0080ff" stroke-width="2"/>
+   <text x="36" y="628" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Utilisateur</text>
+   <defs>
+      <linearGradient id="Gradient5" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="960" cy="430" rx="48" ry="36" fill="url(#Gradient5)" stroke="#0080ff" stroke-width="2"/>
+   <text x="960" y="435" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Sign in</text>
+   <defs>
+      <linearGradient id="Gradient6" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="407" cy="447" rx="49" ry="36" fill="url(#Gradient6)" stroke="#0080ff" stroke-width="2"/>
+   <text x="408" y="452" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">edit profile</text>
+   <defs>
+      <linearGradient id="Gradient7" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="409" cy="600" rx="48" ry="36" fill="url(#Gradient7)" stroke="#0080ff" stroke-width="2"/>
+   <text x="409" y="605" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">report</text>
+   <defs>
+      <linearGradient id="Gradient8" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="412" cy="523" rx="48" ry="36" fill="url(#Gradient8)" stroke="#0080ff" stroke-width="2"/>
+   <text x="412" y="521" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">add </text>
+   <text x="412" y="535" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">favouris</text>
+   <defs>
+      <linearGradient id="Gradient9" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="1129" cy="333" rx="48" ry="36" fill="url(#Gradient9)" stroke="#0080ff" stroke-width="2"/>
+   <text x="1129" y="338" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Sign up</text>
+   <defs>
+      <linearGradient id="Gradient10" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="411" cy="677" rx="50" ry="36" fill="url(#Gradient10)" stroke="#0080ff" stroke-width="2"/>
+   <text x="412" y="682" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">delete post</text>
+   <defs>
+      <linearGradient id="Gradient11" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ffffc0"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="68" cy="918" rx="8" ry="8" fill="url(#Gradient11)" stroke="#0080ff" stroke-width="2"/>
+   <line x1="68" x2="68" y1="926" y2="942" stroke="#0080ff" stroke-width="2"/>
+   <line x1="52" x2="84" y1="934" y2="934" stroke="#0080ff" stroke-width="2"/>
+   <line x1="52" x2="68" y1="958" y2="942" stroke="#0080ff" stroke-width="2"/>
+   <line x1="84" x2="68" y1="958" y2="942" stroke="#0080ff" stroke-width="2"/>
+   <text x="68" y="974" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Administrateur</text>
+   <defs>
+      <linearGradient id="Gradient12" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="587" cy="303" rx="50" ry="36" fill="url(#Gradient12)" stroke="#0080ff" stroke-width="2"/>
+   <text x="587" y="301" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">send </text>
+   <text x="587" y="315" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">message</text>
+   <defs>
+      <linearGradient id="Gradient13" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="452" cy="250" rx="73" ry="36" fill="url(#Gradient13)" stroke="#0080ff" stroke-width="2"/>
+   <text x="453" y="255" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">sort by category</text>
+   <defs>
+      <linearGradient id="Gradient14" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="395" cy="919" rx="65" ry="36" fill="url(#Gradient14)" stroke="#0080ff" stroke-width="2"/>
+   <text x="395" y="924" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">manage users</text>
+   <defs>
+      <linearGradient id="Gradient15" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="395" cy="1004" rx="72" ry="36" fill="url(#Gradient15)" stroke="#0080ff" stroke-width="2"/>
+   <text x="395" y="1009" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">manage reports</text>
+   <defs>
+      <linearGradient id="Gradient16" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="546" cy="1079" rx="56" ry="36" fill="url(#Gradient16)" stroke="#0080ff" stroke-width="2"/>
+   <text x="546" y="1077" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">manage </text>
+   <text x="546" y="1091" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">messages</text>
+   <defs>
+      <linearGradient id="Gradient17" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#c0ffff"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="493" cy="842" rx="64" ry="36" fill="url(#Gradient17)" stroke="#0080ff" stroke-width="2"/>
+   <text x="493" y="847" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">manage posts</text>
+</svg>

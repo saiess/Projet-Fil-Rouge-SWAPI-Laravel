@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="155mm" xmlns="http://www.w3.org/2000/svg" height="180mm" version="1.1" viewBox="0 0 587 683" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <rect x="2" y="2" fill="none" width="583" height="679" stroke="#d0d0e8" stroke-width="1"/>
+   <polygon fill="#ffffff" points="2,2 2,22 190,22 197,15 197,2 2,2" stroke="#d0d0e8" stroke-width="1" stroke-linejoin="miter"/>
+   <text x="6" y="16" fill="#000000" font-size="14" font-family="Arial">DiagrammeSequence_Visiteur</text>
+   <polyline fill="none" points="229,530 74,530" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="87,526 74,530 87,534" stroke="#8080c0" stroke-width="1"/>
+   <text x="150" y="519" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Confirmation de l'inscription</text>
+   <polyline fill="none" points="363,502 229,502" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="248,498 235,502 248,506" stroke="#8080c0" stroke-width="1"/>
+   <text x="299" y="498" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">UtilisateurCree()</text>
+   <polyline fill="none" points="498,500 359,500" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="380,496 367,500 380,504" stroke="#8080c0" stroke-width="1"/>
+   <text x="432" y="496" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Reponse()</text>
+   <polyline fill="none" points="228,403 74,403" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="87,399 74,403 87,407" stroke="#8080c0" stroke-width="1"/>
+   <text x="151" y="393" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">AfficherMessageErreur()</text>
+   <polyline fill="none" points="359,371 228,371" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="248,367 235,371 248,375" stroke="#8080c0" stroke-width="1"/>
+   <text x="297" y="367" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">utilisateurExist()</text>
+   <polyline fill="none" points="360,270 501,270" stroke="#8080c0" stroke-width="1"/>
+   <polygon fill="#8080c0" points="493,270 480,273 480,267" stroke="#8080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <text x="430" y="264" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Verification()</text>
+   <polyline fill="none" points="499,367 361,367" stroke="#8080c0" stroke-width="1" stroke-dasharray="16,8"/>
+   <polyline fill="none" points="374,363 361,367 374,371" stroke="#8080c0" stroke-width="1"/>
+   <text x="430" y="363" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Reponse()</text>
+   <polyline fill="none" points="235,260 361,260" stroke="#8080c0" stroke-width="1"/>
+   <polygon fill="#8080c0" points="355,260 342,263 342,257" stroke="#8080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <text x="296" y="248" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Envoi les Donnee()</text>
+   <polyline fill="none" points="229,158 277,158 277,179 229,179" stroke="#8080c0" stroke-width="1"/>
+   <polygon fill="#8080c0" points="239,179 252,176 252,182" stroke="#8080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <text x="277" y="164" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Verification Champs()</text>
+   <polyline fill="none" points="74,141 229,141" stroke="#8080c0" stroke-width="1"/>
+   <polygon fill="#8080c0" points="223,141 210,144 210,138" stroke="#8080c0" stroke-width="1" stroke-linejoin="miter"/>
+   <text x="149" y="131" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Ramplire les champs</text>
+   <defs>
+      <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ecf9ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="178" y="42" fill="url(#Gradient1)" width="101" height="48" stroke="#0080ff" stroke-width="1"/>
+   <text x="228" y="71" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle" text-decoration="underline">ViewInscription</text>
+   <polyline fill="none" points="229,90 229,668" stroke="#0080ff" stroke-width="1" stroke-dasharray="3,3"/>
+   <defs>
+      <linearGradient id="Gradient2" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="223" y="141" fill="url(#Gradient2)" width="12" height="262" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient3" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="227" y="179" fill="url(#Gradient3)" width="12" height="16" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient4" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="223" y="463" fill="url(#Gradient4)" width="12" height="67" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient5" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0e8"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="229" cy="334" rx="3" ry="3" fill="url(#Gradient5)" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient6" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ecf9ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="294" y="42" fill="url(#Gradient6)" width="134" height="48" stroke="#0080ff" stroke-width="1"/>
+   <text x="361" y="71" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle" text-decoration="underline">ControllerInscription</text>
+   <polyline fill="none" points="361,90 361,668" stroke="#0080ff" stroke-width="1" stroke-dasharray="3,3"/>
+   <defs>
+      <linearGradient id="Gradient7" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="355" y="244" fill="url(#Gradient7)" width="12" height="127" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient8" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="355" y="461" fill="url(#Gradient8)" width="12" height="41" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient9" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ecf9ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="444" y="42" fill="url(#Gradient9)" width="110" height="48" stroke="#0080ff" stroke-width="1"/>
+   <text x="499" y="71" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle" text-decoration="underline">ModelInscription</text>
+   <polyline fill="none" points="499,90 499,668" stroke="#0080ff" stroke-width="1" stroke-dasharray="3,3"/>
+   <defs>
+      <linearGradient id="Gradient10" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="493" y="270" fill="url(#Gradient10)" width="12" height="97" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient11" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0ff"/>
+      </linearGradient>
+   </defs>
+   <rect x="493" y="467" fill="url(#Gradient11)" width="12" height="33" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient12" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#d0d0e8"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="499" cy="334" rx="3" ry="3" fill="url(#Gradient12)" stroke="#000080" stroke-width="1"/>
+   <defs>
+      <linearGradient id="Gradient13" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+         <stop offset="5%" stop-color="#ffffff"/>
+         <stop offset="95%" stop-color="#ffffc0"/>
+      </linearGradient>
+   </defs>
+   <ellipse cx="74" cy="50" rx="8" ry="8" fill="url(#Gradient13)" stroke="#0080ff" stroke-width="1"/>
+   <line x1="74" x2="74" y1="58" y2="74" stroke="#0080ff" stroke-width="1"/>
+   <line x1="58" x2="90" y1="66" y2="66" stroke="#0080ff" stroke-width="1"/>
+   <line x1="58" x2="74" y1="90" y2="74" stroke="#0080ff" stroke-width="1"/>
+   <line x1="90" x2="74" y1="90" y2="74" stroke="#0080ff" stroke-width="1"/>
+   <text x="74" y="106" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Visiteur</text>
+   <polyline fill="none" points="74,90 74,668" stroke="#0080ff" stroke-width="1" stroke-dasharray="3,3"/>
+   <text x="125" y="346" fill="#000000" font-size="10" font-family="Arial">utilisateur Exist</text>
+   <polyline fill="none" points="89,453 566,453" stroke="#000000" stroke-width="1" stroke-dasharray="16,8"/>
+   <text x="95" y="465" fill="#000000" font-size="10" font-family="Arial">utilisateur not Exist</text>
+   <polyline fill="none" points="89,334 566,334 566,585 89,585 89,334" stroke="#d0d0e8" stroke-width="2"/>
+   <polygon fill="#ffffff" points="89,334 89,353 110,353 116,347 116,334 89,334" stroke="#d0d0e8" stroke-width="2" stroke-linejoin="miter"/>
+   <text x="93" y="348" fill="#000000" font-size="14" font-family="Arial">alt</text>
+   <text x="150" y="519" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Confirmation de l'inscription</text>
+   <text x="299" y="498" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">UtilisateurCree()</text>
+   <text x="432" y="496" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Reponse()</text>
+   <text x="151" y="393" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">AfficherMessageErreur()</text>
+   <text x="297" y="367" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">utilisateurExist()</text>
+   <text x="430" y="264" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Verification()</text>
+   <text x="430" y="363" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Reponse()</text>
+   <text x="296" y="248" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Envoi les Donnee()</text>
+   <text x="277" y="164" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Verification Champs()</text>
+   <text x="149" y="131" fill="#000000" font-size="14" font-family="Arial" text-anchor="middle">Ramplire les champs</text>
+</svg>
