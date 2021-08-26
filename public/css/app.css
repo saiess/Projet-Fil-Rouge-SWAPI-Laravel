@@ -11787,6 +11787,8 @@ body {
   background-color: white;
   border: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.575);
+  text-decoration: none;
+  color: black;
 }
 
 .btn-action:hover {
@@ -12604,6 +12606,7 @@ body.navi-active .navi_list-item:nth-child(5) {
   border-top: none;
   border-right: none;
   border-left: none;
+  margin-top: 5px;
 }
 
 .share {
@@ -13004,7 +13007,7 @@ body.navi-active .navi_list-item:nth-child(5) {
 }
 
 .user-pic {
-  width: 23%;
+  width: 22.5%;
   background-color: white;
   height: 55%;
   display: flex;
@@ -13040,25 +13043,21 @@ body.navi-active .navi_list-item:nth-child(5) {
   width: 80%;
 }
 
-.interest-input {
-  background-color: transparent;
-  border: none;
-  color: #180C9A;
-}
-
 .interest {
   display: flex;
   flex-flow: wrap;
   width: 50%;
 }
-
-.p-interest {
+.interest .p-interest {
   background-color: whitesmoke;
   padding: 2px 8px;
   margin: 0px 10px 10px 0px;
   border-radius: 50px;
   color: #716b6b;
   font-size: 12px;
+}
+.interest p:last-child {
+  margin-bottom: 10px !important;
 }
 
 .call {
@@ -13126,17 +13125,7 @@ body.navi-active .navi_list-item:nth-child(5) {
   border: 3px solid whitesmoke;
 }
 
-.z {
-  width: 15em;
-  height: 29vh;
-  border-radius: 1rem;
-  border: 2px solid #180C9A;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-}
-
-.y::after, .z::after {
+.y::after {
   content: "";
   position: absolute;
   width: 15em;
@@ -13149,14 +13138,14 @@ body.navi-active .navi_list-item:nth-child(5) {
   z-index: 3;
 }
 
-.y:hover::after, .z:hover:after {
+.y:hover::after {
   transform: translate(0%, 0%);
 }
 
 .view {
   position: absolute;
-  left: 22%;
-  top: 35%;
+  left: 34%;
+  top: 30%;
   transform: translate(50%, 500%);
   font-size: 28px;
   color: white !important;
@@ -13166,7 +13155,7 @@ body.navi-active .navi_list-item:nth-child(5) {
 
 .deletePost {
   position: absolute;
-  left: 12%;
+  left: 37%;
   top: 46%;
   transform: translate(50%, 500%);
   font-size: 28px;
@@ -13175,7 +13164,24 @@ body.navi-active .navi_list-item:nth-child(5) {
   transition: 0.6s;
 }
 
-.y:hover a, .z:hover a {
+.delete_button {
+  position: absolute;
+  left: 37%;
+  top: 46%;
+  transform: translate(50%, 500%);
+  font-size: 28px;
+  color: white !important;
+  z-index: 4;
+  transition: 0.6s;
+  background-color: transparent;
+  border: none;
+}
+
+.y:hover button {
+  transform: translate(50%, 50%);
+}
+
+.y:hover a {
   transform: translate(50%, 50%);
 }
 
@@ -13314,16 +13320,7 @@ body.navi-active .navi_list-item:nth-child(5) {
   border: 3px solid whitesmoke;
 }
 
-.v {
-  width: 10em;
-  height: 20vh;
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-}
-
-.w::after, .v::after {
+.w::after {
   content: "";
   position: absolute;
   width: 10em;
@@ -13336,16 +13333,16 @@ body.navi-active .navi_list-item:nth-child(5) {
   z-index: 3;
 }
 
-.w:hover::after, .v:hover:after {
+.w:hover::after {
   transform: translate(0%, 0%);
 }
 
 .viewf {
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 32%;
   transform: translate(50%, 500%);
-  font-size: 22px;
+  font-size: 30px;
   color: white !important;
   z-index: 4;
   transition: 0.6s;
@@ -13813,17 +13810,11 @@ body.navi-active .navi_list-item:nth-child(5) {
   overflow: hidden;
 }
 
-.z {
-  width: 20em;
-  height: 44vh;
-  border: 3px solid whitesmoke;
+.y:nth-child(even) {
   border: 1px solid #180C9A;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
 }
 
-.y:hover, .z:hover {
+.y:hover {
   box-shadow: 0 10px 70px rgba(181, 184, 185, 0.425);
   border: none;
 }

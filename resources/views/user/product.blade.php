@@ -26,10 +26,10 @@
           <div class="navi_content">
             <ul class="navi_list">
                 <li class="navi_list-item"><a href="{{ route('home') }}" class="li-a_nav">Home</a></li>
-                <li class="navi_list-item"><a href="{{ route('swap.index') }}" class="li-a_nav">Swap</a></li>
+                <li class="navi_list-item"><a href="{{ route('post.index') }}" class="li-a_nav">Swap</a></li>
                 @auth
                     @if(Auth::user()->role === "user")
-                        <li class="navi_list-item"><a href="{{ route('profile.index') }}" class="li-a_nav">Profile</a></li>
+                        <li class="navi_list-item"><a href="{{ route('profile',Auth::user()->id) }}" class="li-a_nav">Profile</a></li>
                     @endif
                 @endauth
                 @guest
@@ -40,7 +40,7 @@
                         <li class="navi_list-item"><a href="{{ route('admin.index') }}" class="li-a_nav">Admin</a></li>
                     @endif
                 @endauth
-                <li class="navi_list-item"><a href="{{ route('faqs.index') }}" class="li-a_nav">FAQs</a></li>
+                <li class="navi_list-item"><a href="{{ route('faqs') }}" class="li-a_nav">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -49,26 +49,26 @@
       <div class="product-show">
         <div class="product-zone">
           <div class="pic-div">
-            <img src="{{asset('image/camera.png')}}" alt="" class="the-pic" />
+            <img src="{{asset('upload/posts/'. $singlposts->image)}}" alt="" class="the-pic" />
           </div>
 
           <div class="info-zone">
-            <h1 class="title-pic">
-              Home Products Character Nam Libero Tempor Cum Soluta-Harum
-            </h1>
+            <h1 class="title-pic">{{$singlposts->title}}</h1>
 
-            <p class="discreption-pic">
-              This NoiseStorm font is inspired by Classic Retro and Vintage
-              apparel, headlines, signage, logo, quote, apparel and other
-              creative applications.
-            </p>
+                      <p class="discreption-pic">{{$singlposts->description}}</p>
 
-            <p style="font-weight: 600">Caregory: <span>Electronics</span></p>
+                      <p style="font-weight: 600">Caregory: <span style="font-weight: normal">{{$categorypost[0]->name}}</span></p>
+
             <div class="btn_product">
-              <button class="wishlist">
-                <span><img src="{{asset('image/like.svg')}}" alt="" style="width: 20px; margin-right:10px" /></span>
-                Favourites
-              </button>
+
+                <form action="{{ route('favpost', ['idpost'=>($singlposts)]) }}" method="GET" class="wishlist">
+                    @csrf
+                    <button style="border: none; background-color: transparent;">
+                        <span><img src="{{asset('image/like.svg')}}" alt="" style="width: 20px; margin-right:10px" /></span>
+                        Favourites
+                    </button>
+                </form>
+
               <button class="share">
                 <span><svg
                   id="Capa_1"
@@ -85,19 +85,18 @@
               ></span>
                 Share
               </button>
+
               <button class="report">
                 <i class="fas fa-flag" style="font-size:20px; margin-right:10px"></i> Report
               </button>
+
             </div>
+
             <button class="call" id="popContact">
-              <span
-                ><img
-                  src="{{asset('image/call.png')}}"
-                  alt=""
-                  style="width: 30px; margin-bottom: 5px"
-              /></span>
+              <span><img src="{{asset('image/call.png')}}" alt="" style="width: 30px; margin-bottom: 5px"/></span>
               SHOW CANTACT INFO
             </button>
+
           </div>
         </div>
       </div>
@@ -112,10 +111,16 @@
         <div class="edit-info">
           <h1 style="text-align: center">Contact User</h1>
           <div class="show-contact">
-            <img src="Calling.svg" alt="" style="width: 16em" />
-            <p class="show-p">Email: <span>saidok@gmail.com</span></p>
-            <p class="show-p">Phone: <span>0645071218</span></p>
-            <a href="profile.blade.php" class="show-a"><span>view profile</span></a>
+            <img src="{{asset('image/Calling.svg')}}" alt="" style="width: 16em" />
+            <p class="show-p">Email: <span>{{$postuser[0]->email}}</span></p>
+            <p class="show-p">Phone: <span>{{$postuser[0]->phone}}</span></p>
+
+              @if ($postuser[0]->user_id != (Auth::user()->id))
+                  <a href="{{ route('otherprofile', ['id' => $postuser[0]->id]) }}" class="show-a"><span>view profile</span></a>
+              @elseif($postuser[0]->user_id == Auth::user()->id)
+                  <a href="{{ route('profile',Auth::user()->id) }}" class="show-a"><span>view profile</span></a>
+              @endif
+
           </div>
         </div>
       </div>

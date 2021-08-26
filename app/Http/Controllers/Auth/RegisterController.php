@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'city' => $data['city'],
             'phone' => $data['phone'],
             'role'=> 'user',
-            'photo'=> null,
+            'photo'=> 'unnamed.png',
         ]);
     }
 }

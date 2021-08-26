@@ -27,10 +27,10 @@
           <div class="navi_content">
             <ul class="navi_list">
                 <li class="navi_list-item"><a href="{{ route('home') }}" class="li-a_nav">Home</a></li>
-                <li class="navi_list-item"><a href="{{ route('swap.index') }}" class="li-a_nav">Swap</a></li>
+                <li class="navi_list-item"><a href="{{ route('post.index') }}" class="li-a_nav">Swap</a></li>
                 @auth
                     @if(Auth::user()->role === "user")
-                <li class="navi_list-item"><a href="{{ route('profile.index') }}" class="li-a_nav">Profile</a></li>
+                <li class="navi_list-item"><a href="{{ route('profile') }}" class="li-a_nav">Profile</a></li>
                     @endif
                 @endauth
                 @guest
@@ -41,7 +41,7 @@
                         <li class="navi_list-item"><a href="{{ route('admin.index') }}" class="li-a_nav">Admin</a></li>
                     @endif
                 @endauth
-                <li class="navi_list-item"><a href="{{ route('faqs.index') }}" class="li-a_nav">FAQs</a></li>
+                <li class="navi_list-item"><a href="{{ route('faqs') }}" class="li-a_nav">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -69,7 +69,7 @@
 
           <div class="user-info">
             <div class="info-zone">
-              <h1 class="user-name">{{Auth::user()->name}}</h1>
+              <h1 class="user-name">{{$userInfo->name}}</h1>
               <div class="mb-2">
                 <p class="discreption-pic">
                   <i class="fas fa-calendar-week"></i> on swapi since {{Auth::user()->created_at}}
@@ -83,29 +83,20 @@
               <div class="mb-4">
                 <p style="font-weight: 600">Want to exchange for: </p>
                 <div class="interest">
-                    <p class="p-interest">electronics</p>
-                    <p class="p-interest">food</p>
-                    <p class="p-interest">button</p>
-                    <p class="p-interest">popContact</p>
-{{--                    @foreach($categories as $category)--}}
-{{--                        <p class="p-interest">{{$categories->name}}</p>--}}
-{{--                    @endforeach--}}
+                    @foreach($categoryusers as $categoryuser)
+                        <p class="p-interest">{{$categoryuser->name}}</p>
+                    @endforeach
                 </div>
               </div>
               <div>
                 <button class="call" id="popContact">
-                  <span
-                    ><img
-                      src="{{asset('image/call.png')}}"
-                      alt=""
-                      style="width: 30px; margin-bottom: 5px"
-                  /></span>
+                  <span><img src="{{asset('image/call.png')}}" alt="" style="width: 30px; margin-bottom: 5px"/></span>
                   SHOW CONTACT INFO
                 </button>
               </div>
             </div>
             <div class="user-pic">
-              <img src="{{Auth::user()->photo}}" alt="" class="the-pic" />
+              <img src="{{asset('upload/avatar/'.Auth::user()->photo)}}" alt="" class="the-pic" />
             </div>
           </div>
         </div>
@@ -120,10 +111,12 @@
         </div>
         <div class="edit-info">
           <h1 style="text-align: center">User settings:</h1>
-          <form action="{{ route('userupdate') }}" method="post" class="form-edit">
+          <form action="{{ route('userupdate') }}" method="post" class="form-edit" enctype="multipart/form-data">
               @csrf
+{{--              @method('put')--}}
             <label for="">User Name</label>
-            <input type="text" name="name" class="form-control mb-3" placeholder="edit name" value="{{Auth::user()->name}}"/>
+            <input type="text" name="name" class="form-control mb-3" placeholder="edit name" value="{{$userInfo->name}}"/>
+
             <label for="">City</label>
               <select name="city" id="" class="form-control mb-3">
                   <option value="city">{{Auth::user()->city}}</option>
@@ -133,17 +126,21 @@
                   <option value="agadir">Agadir</option>
                   <option value="marrakesh">Marrakesh</option>
               </select>
+
             <label for="">Phone Number</label>
             <input type="text" name="phone" class="form-control mb-3" placeholder="edit phone number" value="{{Auth::user()->phone}}"/>
+
             <label for="">Interests</label>
-            <select name="skills" id="" multiple="" class="label ui selection fluid dropdown">
+            <select name="skills[]" id="" multiple="" class="label ui selection fluid dropdown">
                 <option value="">Choose interest</option>
                 @foreach($categories as $key => $category)
-                <option value="{{$key}}">{{$category->name}}</option>
+                <option value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
+
             <label for="" class="mt-3">profile photo</label>
             <input type="file" name="photo" class="form-control mb-3" value="{{Auth::user()->photo}}"/>
+
             <input type="submit" value="Save changes" class="inbtn mb-3" />
           </form>
         </div>
@@ -160,30 +157,12 @@
         <div class="edit-info">
           <h1 style="text-align: center">Your Favourites</h1>
           <div class="fav-div">
+              @foreach($posts as $post)
             <div class="w" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
+              <img src="{{asset('upload/posts/'. $post->image)}}" alt="" class="img-product" />
+              <a href="{{ route('post.show', $post->id) }}" class="viewf"><i class="fas fa-eye"></i></a>
             </div>
-            <div class="v" data-aos="fade-up" data-aos-duration="2000">
-                <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
-            </div>
-            <div class="w" data-aos="fade-up" data-aos-duration="2000">
-                <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
-            </div>
-            <div class="v" data-aos="fade-up" data-aos-duration="2000">
-                <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
-            </div>
-            <div class="w" data-aos="fade-up" data-aos-duration="2000">
-                <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
-            </div>
-            <div class="v" data-aos="fade-up" data-aos-duration="2000">
-                <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-              <a href="product.blade.php" class="viewf">View</a>
-            </div>
+              @endforeach
           </div>
         </div>
       </div>
@@ -216,12 +195,18 @@
         </div>
         <div class="edit-info">
           <h1 style="text-align: center">Add Offer</h1>
-          <form action="" method="post" class="Add-offer">
+          <form action="{{ route('post.store')}}" method="POST" class="Add-offer" enctype="multipart/form-data">
+              @csrf
             <label for="addoffer" class="labelAdd"><i class="fas fa-folder-plus"></i>Add Item picture</label>
-            <input type="file" name="" id="addoffer" style="display: none;">
-            <input type="text" name="" id="" class="form-control" placeholder="Add Title">
-            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Add Discreaption"></textarea>
-            <select name="" id="" class="form-control">Category</select>
+            <input type="file" name="postImage" id="addoffer" style="display: none;">
+            <input type="text" name="title" id="" class="form-control" placeholder="Add Title">
+            <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Add Description"></textarea>
+            <select name="category" id="" class="form-control">
+                <option value="category">Choose Category</option>
+                @foreach($categories as $category)
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                @endforeach
+            </select>
             <input type="submit" value="Add" class="btnAdd">
           </form>
         </div>
@@ -232,59 +217,29 @@
 
     <div class="container d-flex justify-content-between">
       <h3>All User Name Exchange Items:</h3>
+        @auth
+            @if(Auth::user()->role === "user")
       <button class="call" id="popAdd">
-        <span
-          ><img src="{{asset('image/plus.png')}}" alt="" style="width: 30px; margin-bottom: 5px"
-        /></span>
+        <span><img src="{{asset('image/plus.png')}}" alt="" style="width: 30px; margin-bottom: 5px"/></span>
         ADD YOUR OFFER
       </button>
+            @endif
+        @endauth
     </div>
 
     <section class="container-fluid all-items">
       <div class="item-zone">
-        <div class="container product-pic">
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-              <img src="{{asset('image/cap.png')}}" alt="" class="img-product" />
-            <a href="product.blade.php" class="view">View</a>
-            <a href="" class="deletePost">Delete</a>
-          </div>
-        </div>
+              <div class="container product-pic">
+                  @foreach($posts as $post)
+                      <form action="{{ route('post.destroy', $post->id) }}" method="POST" class="y" data-aos="fade-up" data-aos-duration="2000">
+                          @csrf
+                          @method('delete')
+                      <img src="{{asset('upload/posts/'. $post->image)}}" alt="" class="img-product" />
+                      <a href="{{ route('post.show', $post->id) }}" class="view"><i class="fas fa-eye"></i></a>
+                          <button class="delete_button"><i class="fas fa-trash"></i></button>
+                      </form>
+                  @endforeach
+              </div>
       </div>
     </section>
 

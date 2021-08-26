@@ -306,55 +306,16 @@ body.navi-active .navi_list-item:nth-child(5) {
   // box-shadow: 0 10px 70px rgba(181, 184, 185, 0.192);
 }
 
-.z {
-  width: 20em;
-  height: 44vh;
-  // background-color: whitesmoke;
-  border: 3px solid whitesmoke;
-  border: 1px solid #180C9A;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  // box-shadow: 0 10px 70px rgba(181, 184, 185, 0.192);
+.y:nth-child(even){
+    border: 1px solid #180C9A;
 }
 
-.y:hover, .z:hover{
+
+.y:hover{
    box-shadow: 0 10px 70px rgba(181, 184, 185, 0.425);
    border: none;
 }
 
-// .y::after, .z::after{
-//   content: "";
-//   position: absolute;
-//   width: 22em;
-//   height: 50vh;
-//   border-radius: 1rem;
-//   background-color: rgba(0, 0, 0, 0.534);
-//   // top: 10%;
-//   left: 0%;
-//   transform: translate(-0%, 100%);
-//   transition: .6s;
-//   z-index: 3;
-// }
-
-// .y:hover::after, .z:hover:after{
-//   transform: translate(-0%, 0%);
-// }
-
-// .view{
-//   position: absolute;
-//   left: 31%;
-//   top: 40%;
-//   transform: translate(50%, 500%);
-//   font-size: 34px;
-//   color: white !important;
-//   z-index: 4;
-//   transition: .6s;
-// }
-
-// .y:hover a, .z:hover a{
-//   transform: translate(50%, 50%);
-// }
 
 .img-product{
   width: 80%;

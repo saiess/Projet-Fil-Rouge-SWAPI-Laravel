@@ -39,7 +39,7 @@
                     </div>
                     <div class="links">
                         <i class="fas fa-inbox"></i>
-                        <a href="{{ route('admin.pagePost') }}" class="a-links">Posts</a>
+                        <a href="{{ route('admin.pagePost',['id']) }}" class="a-links">Posts</a>
                     </div>
                     <div class="links">
                         <i class="fas fa-flag"></i>

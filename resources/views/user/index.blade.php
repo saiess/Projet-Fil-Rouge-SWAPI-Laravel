@@ -21,10 +21,10 @@
             <div class="navi_content">
               <ul class="navi_list">
                 <li class="navi_list-item"><a href="{{ route('home') }}" class="li-a_nav">Home</a></li>
-                <li class="navi_list-item"><a href="{{ route('swap.index') }}" class="li-a_nav">Swap</a></li>
+                <li class="navi_list-item"><a href="{{ route('post.index') }}" class="li-a_nav">Swap</a></li>
                   @auth
                       @if(Auth::user()->role === "user")
-                          <li class="navi_list-item"><a href="{{ route('profile.index') }}" class="li-a_nav">Profile</a></li>
+                          <li class="navi_list-item"><a href="{{ route('profile') }}" class="li-a_nav">Profile</a></li>
                       @endif
                   @endauth
                   @guest
@@ -35,7 +35,7 @@
                   <li class="navi_list-item"><a href="{{ route('admin.index') }}" class="li-a_nav">Admin</a></li>
                       @endif
                   @endauth
-                <li class="navi_list-item"><a href="{{ route('faqs.index') }}" class="li-a_nav">FAQs</a></li>
+                <li class="navi_list-item"><a href="{{ route('faqs') }}" class="li-a_nav">FAQs</a></li>
               </ul>
             </div>
         </div>

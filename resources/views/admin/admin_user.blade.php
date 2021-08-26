@@ -18,24 +18,35 @@
             </tr>
             </thead>
             <tbody>
+            @foreach($users as $u)
             <tr class="colum d-flex justify-content-around mt-2">
-                <td style="width: 12%; text-align: center;">232214</td>
-                <td style="width: 12%; text-align: center;">sami</td>
-                <td style="width: 12%; text-align: center;"><button id="popContact" class="btn-action">view</button></td>
-                <td style="width: 12%; text-align: center;"><button class="btn-action">block</button></td>
+                <td style="width: 12%; text-align: center;">{{$u->id}}</td>
+                <td style="width: 12%; text-align: center;">{{$u->name}}</td>
+                <td style="width: 12%; text-align: center;"><a href="{{ route('otherprofile', $u->id) }}" id="popContact" class="btn-action">view</a></td>
+                <td style="width: 12%; text-align: center;">
+                    <form action="{{ route('post.destroy', $u->id) }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <button class="btn-action">delete</button>
+                    </form>
+                </td>
             </tr>
+            @endforeach
             </tbody>
         </table>
 
-        <nav aria-label="..." class="w-100">
-            <ul class="pagination pagination-sm d-flex justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-            </ul>
-        </nav>
+        <div class="w-100 d-flex justify-content-center">
+            {{$users->links()}}
+        </div>
+{{--        <nav aria-label="..." class="w-100">--}}
+{{--            <ul class="pagination pagination-sm d-flex justify-content-center">--}}
+{{--                <li class="page-item disabled">--}}
+{{--                    <a class="page-link" href="#" tabindex="-1">1</a>--}}
+{{--                </li>--}}
+{{--                <li class="page-item"><a class="page-link" href="#">2</a></li>--}}
+{{--                <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
+{{--            </ul>--}}
+{{--        </nav>--}}
     </div>
 
 @endsection

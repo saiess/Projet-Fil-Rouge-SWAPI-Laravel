@@ -299,17 +299,11 @@ body.navi-active .navi_list-item:nth-child(5) {
   overflow: hidden;
 }
 
-.z {
-  width: 20em;
-  height: 44vh;
-  border: 3px solid whitesmoke;
+.y:nth-child(even) {
   border: 1px solid #180C9A;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
 }
 
-.y:hover, .z:hover {
+.y:hover {
   box-shadow: 0 10px 70px rgba(181, 184, 185, 0.425);
   border: none;
 }

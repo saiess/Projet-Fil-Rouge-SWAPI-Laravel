@@ -19,9 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('image');
             $table->string('description');
-            $table->string('category');
             $table->foreignId('user_id')->constrained()->onDelete("cascade");
-            $table->foreignId('favourite_id')->constrained()->onDelete("cascade");
             $table->foreignId('categorie_id')->constrained()->onDelete("cascade");
         });
     }

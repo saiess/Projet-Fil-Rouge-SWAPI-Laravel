@@ -302,7 +302,7 @@ body.navi-active .navi_list-item:nth-child(5) {
 }
 
 .user-pic {
-  width: 23%;
+  width: 22.5%;
   background-color: white;
   height: 55%;
   display: flex;
@@ -338,25 +338,24 @@ body.navi-active .navi_list-item:nth-child(5) {
   width: 80%;
 }
 
-.interest-input {
-  background-color: transparent;
-  border: none;
-  color: #180C9A;
-}
 
 .interest{
     display: flex;
     flex-flow: wrap;
     width: 50%;
-}
 
-.p-interest{
-    background-color: whitesmoke;
-    padding: 2px 8px;
-    margin: 0px 10px 10px 0px;
-    border-radius: 50px;
-    color: #716b6b;
-    font-size: 12px;
+    .p-interest{
+        background-color: whitesmoke;
+        padding: 2px 8px;
+        margin: 0px 10px 10px 0px;
+        border-radius: 50px;
+        color: #716b6b;
+        font-size: 12px;
+    }
+
+    p:last-child{
+        margin-bottom: 10px !important;
+    }
 }
 
 .call {
@@ -425,18 +424,7 @@ body.navi-active .navi_list-item:nth-child(5) {
   border: 3px solid whitesmoke;
 }
 
-.z {
-  width: 15em;
-  height: 29vh;
-  border-radius: 1rem;
-  border: 2px solid #180C9A;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-  //   background-color: whitesmoke;
-}
-
-.y::after, .z::after{
+.y::after{
   content: "";
   position: absolute;
   width: 15em;
@@ -450,14 +438,14 @@ body.navi-active .navi_list-item:nth-child(5) {
   z-index: 3;
 }
 
-.y:hover::after, .z:hover:after{
+.y:hover::after{
   transform: translate(-0%, 0%);
 }
 
 .view{
   position: absolute;
-  left: 22%;
-  top: 35%;
+  left: 34%;
+  top: 30%;
   transform: translate(50%, 500%);
   font-size: 28px;
   color: white !important;
@@ -467,7 +455,7 @@ body.navi-active .navi_list-item:nth-child(5) {
 
 .deletePost{
   position: absolute;
-  left: 12%;
+  left: 37%;
   top: 46%;
   transform: translate(50%, 500%);
   font-size: 28px;
@@ -476,8 +464,25 @@ body.navi-active .navi_list-item:nth-child(5) {
   transition: .6s;
 }
 
-.y:hover a, .z:hover a{
+.delete_button{
+    position: absolute;
+    left: 37%;
+    top: 46%;
+    transform: translate(50%, 500%);
+    font-size: 28px;
+    color: white !important;
+    z-index: 4;
+    transition: .6s;
+    background-color: transparent;
+    border: none;
+}
+
+.y:hover button{
   transform: translate(50%, 50%);
+}
+
+.y:hover a{
+    transform: translate(50%, 50%);
 }
 
 .img-product {
@@ -617,16 +622,7 @@ body.navi-active .navi_list-item:nth-child(5) {
   border: 3px solid whitesmoke;
 }
 
-.v {
-  width: 10em;
-  height: 20vh;
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid whitesmoke;
-}
-
-.w::after, .v::after{
+.w::after{
   content: "";
   position: absolute;
   width: 10em;
@@ -640,16 +636,16 @@ body.navi-active .navi_list-item:nth-child(5) {
   z-index: 3;
 }
 
-.w:hover::after, .v:hover:after{
+.w:hover::after{
   transform: translate(-0%, 0%);
 }
 
 .viewf{
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 32%;
   transform: translate(50%, 500%);
-  font-size: 22px;
+  font-size: 30px;
   color: white !important;
   z-index: 4;
   transition: .6s;

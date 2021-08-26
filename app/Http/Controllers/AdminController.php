@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\admin;
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -16,13 +17,15 @@ class AdminController extends Controller
 
     public function index()
     {
-
-        return view('admin.admin_user');
+            $usersdata = User::where('role', 'user')->paginate(7);
+            return view('admin.admin_user')->with(['users' => $usersdata]);
     }
 
-    public function pagePost()
+    public function pagePost($id)
     {
-        return view('admin.admin_post');
+        $userpost = User::join("posts", "posts.user_id", "=", "users.id")->paginate(7);
+//        dd($userpost);
+        return view('admin.admin_post')->with(['userpost'=> $userpost]);
     }
 
     public function pageReport()
@@ -94,10 +97,13 @@ class AdminController extends Controller
      * Remove the specified resource from storage.
      *
      * @param admin $admin
-     * @return Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(admin $admin)
     {
-        //
+        $post = Post::find($admin);
+        $user = User::find($admin);
+        $post->delete();
+        return redirect('admin.admin_post');
     }
 }

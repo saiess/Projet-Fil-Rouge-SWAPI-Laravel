@@ -42,4 +42,4 @@
 
 @endsection
 
-@include('admin.popup_admin')
+@include('layouts.popup_admin')

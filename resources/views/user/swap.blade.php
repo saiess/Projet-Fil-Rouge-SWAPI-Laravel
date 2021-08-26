@@ -23,10 +23,10 @@
           <div class="navi_content">
             <ul class="navi_list">
                 <li class="navi_list-item"><a href="{{ route('home') }}" class="li-a_nav">Home</a></li>
-                <li class="navi_list-item"><a href="{{ route('swap.index') }}" class="li-a_nav">Swap</a></li>
+                <li class="navi_list-item"><a href="{{ route('post.index') }}" class="li-a_nav">Swap</a></li>
                 @auth
                     @if(Auth::user()->role === "user")
-                        <li class="navi_list-item"><a href="{{ route('profile.index') }}" class="li-a_nav">Profile</a></li>
+                        <li class="navi_list-item"><a href="{{ route('profile') }}" class="li-a_nav">Profile</a></li>
                     @endif
                 @endauth
                 @guest
@@ -37,7 +37,7 @@
                         <li class="navi_list-item"><a href="{{ route('admin.index') }}" class="li-a_nav">Admin</a></li>
                     @endif
                 @endauth
-                <li class="navi_list-item"><a href="{{ route('faqs.index') }}" class="li-a_nav">FAQs</a></li>
+                <li class="navi_list-item"><a href="{{ route('faqs') }}" class="li-a_nav">FAQs</a></li>
             </ul>
           </div>
         </div>
@@ -78,67 +78,39 @@
         </div>
 
         <div class="container-fluid product-pic">
+            @foreach($products as $p)
           <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="{{ route('products.index') }}"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-            <!-- <a href="product.blade.php" class="view">View</a> -->
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
+            <a href="{{ route('post.show', $p->id) }}"><img src="{{asset('upload/posts/'. $p->image)}}" alt="" class="img-product"></a>
           </div>
 
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="y" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
-          <div class="z" data-aos="fade-up" data-aos-duration="2000">
-            <a href="product.blade.php"><img src="{{asset('image/cap.png')}}" alt="" class="img-product"></a>
-          </div>
+            @endforeach
         </div>
     </section>
 
-    <section class="btns">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <div class="btns">
+         {{$products->links()}}
+
+    </div>
+
+{{--    <section class="btns">--}}
+{{--      <nav aria-label="Page navigation example">--}}
+{{--        <ul class="pagination">--}}
+{{--          <li class="page-item">--}}
+{{--            <a class="page-link" href="#" aria-label="Previous">--}}
+{{--              <span aria-hidden="true">&laquo;</span>--}}
+{{--            </a>--}}
+{{--          </li>--}}
+{{--          <li class="page-item"><a class="page-link" href="#">1</a></li>--}}
+{{--          <li class="page-item"><a class="page-link" href="#">2</a></li>--}}
+{{--          <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
+{{--          <li class="page-item">--}}
+{{--            <a class="page-link" href="#" aria-label="Next">--}}
+{{--              <span aria-hidden="true">&raquo;</span>--}}
+{{--            </a>--}}
+{{--          </li>--}}
+{{--        </ul>--}}
+{{--      </nav>--}}
+{{--    </section>--}}
 
     @include('layouts.footer')
 @endsection
